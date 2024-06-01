@@ -25,7 +25,7 @@ To get started with this project, you'll need to have Go installed on your machi
 
     ```sh
     go get github.com/gofiber/fiber/v2
-    go get github.com/cosmtrek/air@latest
+    go get github.com/joho/godotenv
     ```
 
 3. (Optional) Install `air` for live reloading during development:
@@ -45,6 +45,7 @@ To get started with this project, you'll need to have Go installed on your machi
     ```sh
     air
     ```
+![Screen Shot 2024-06-02 at 05 07 20 AM](https://github.com/Inderjit-blaggan/go_projects/assets/73047852/4f5f7d91-80fa-4ca7-8848-9d202a2d1b7a)
 
 ## Usage
 
@@ -55,51 +56,34 @@ Once the application is running, you can interact with the API using tools like 
 - **Get all todos**:
 
     ```sh
-    curl http://localhost:3000/todos
+    curl http://localhost:PORT/todos
     ```
 
 - **Create a new todo**:
 
     ```sh
-    curl -X POST -H "Content-Type: application/json" -d '{"completed":false,"body":"Learn Go Fiber"}' http://localhost:3000/todos
+    curl -X POST -H "Content-Type: application/json" -d '{"completed":false,"body":"Learn Go Fiber"}' http://localhost:PORT/todos
     ```
 
 - **Get a specific todo by ID**:
 
     ```sh
-    curl http://localhost:3000/todos/1
+    curl http://localhost:PORT/todos/1
     ```
 
 - **Update a todo**:
 
     ```sh
-    curl -X PUT -H "Content-Type: application/json" -d '{"completed":true,"body":"Learn Go Fiber Updated"}' http://localhost:3000/todos/1
+    curl -X PUT -H "Content-Type: application/json" -d '{"completed":true,"body":"Learn Go Fiber Updated"}' http://localhost:PORT/todos/1
     ```
 
 - **Delete a todo**:
 
     ```sh
-    curl -X DELETE http://localhost:3000/todos/1
+    curl -X DELETE http://localhost:3000/todos/id
     ```
 
 ## API Endpoints
 
 ### GET /todos
 
-Retrieves a list of all todo items.
-
-#### Response
-
-```json
-[
-  {
-    "id": 1,
-    "completed": false,
-    "body": "Learn Go"
-  },
-  {
-    "id": 2,
-    "completed": true,
-    "body": "Learn Fiber"
-  }
-]
