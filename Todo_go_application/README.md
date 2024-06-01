@@ -71,12 +71,6 @@ Once the application is running, you can interact with the API using tools like 
     curl -X POST -H "Content-Type: application/json" -d '{"completed":false,"body":"Learn Go Fiber"}' http://localhost:PORT/api/todos
     ```
 
-- **Get a specific todo by ID**:
-
-    ```sh
-    curl http://localhost:PORT/todos/1
-    ```
-
 - **Update a todo**:
 
     ```sh
