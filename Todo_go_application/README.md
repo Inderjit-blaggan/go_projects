@@ -62,13 +62,13 @@ Once the application is running, you can interact with the API using tools like 
 - **Get all todos**:
 
     ```sh
-    curl http://localhost:PORT/todos
+    curl http://localhost:PORT/api/todos
     ```
 
 - **Create a new todo**:
 
     ```sh
-    curl -X POST -H "Content-Type: application/json" -d '{"completed":false,"body":"Learn Go Fiber"}' http://localhost:PORT/todos
+    curl -X POST -H "Content-Type: application/json" -d '{"completed":false,"body":"Learn Go Fiber"}' http://localhost:PORT/api/todos
     ```
 
 - **Get a specific todo by ID**:
@@ -80,13 +80,13 @@ Once the application is running, you can interact with the API using tools like 
 - **Update a todo**:
 
     ```sh
-    curl -X PUT -H "Content-Type: application/json" -d '{"completed":true,"body":"Learn Go Fiber Updated"}' http://localhost:PORT/todos/1
+    curl -X PUT -H "Content-Type: application/json" -d '{"completed":true,"body":"Learn Go Fiber Updated"}' http://localhost:PORT/api/todos/id
     ```
 
 - **Delete a todo**:
 
     ```sh
-    curl -X DELETE http://localhost:3000/todos/id
+    curl -X DELETE http://localhost:PORT/api/todos/id
     ```
 
 ## API Endpoints
