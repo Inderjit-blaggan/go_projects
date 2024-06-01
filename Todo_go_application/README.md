@@ -85,5 +85,5 @@ Once the application is running, you can interact with the API using tools like 
 
 ## API Endpoints
 
-### GET /todos
+### GET /api/todos
 
