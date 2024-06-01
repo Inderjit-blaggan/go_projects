@@ -7,7 +7,6 @@ Welcome to the Go Todo Application repository! This project is a simple todo lis
 - [Installation](#installation)
 - [Usage](#usage)
 - [API Endpoints](#api-endpoints)
-- [Contributing](#contributing)
 - [License](#license)
 
 ## Installation
