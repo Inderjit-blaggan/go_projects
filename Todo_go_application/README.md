@@ -74,7 +74,7 @@ Once the application is running, you can interact with the API using tools like 
 - **Update a todo**:
 
     ```sh
-    curl -X PUT -H "Content-Type: application/json" -d '{"completed":true,"body":"Learn Go Fiber Updated"}' http://localhost:PORT/api/todos/id
+    curl -X PATCH -H "Content-Type: application/json" -d '{"completed":true,"body":"Learn Go Fiber Updated"}' http://localhost:PORT/api/todos/id
     ```
 
 - **Delete a todo**:
