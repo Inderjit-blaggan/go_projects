@@ -17,8 +17,8 @@ To get started with this project, you'll need to have Go installed on your machi
 1. Clone the repository:
 
     ```sh
-    git clone https://github.com/yourusername/go-todo-app.git
-    cd go-todo-app
+    git clone git@github.com:Inderjit-blaggan/go_projects.git
+    cd go_projects/Todo_go_application
     ```
 
 2. Install the required dependencies:
