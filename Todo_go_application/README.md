@@ -33,8 +33,14 @@ To get started with this project, you'll need to have Go installed on your machi
     ```sh
     go install github.com/cosmtrek/air@latest
     ```
+4. Set the custom port inside a `.env` file:
+   - I have used 5000 as shown below
+   
+    ```sh
+    PORT=5000
+    ```
 
-4. Run the application:
+5. Run the application:
 
     ```sh
     go run main.go
